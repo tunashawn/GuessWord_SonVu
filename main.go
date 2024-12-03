@@ -14,7 +14,7 @@ func main() {
 	mode := os.Args[1]
 	size := 5 //default as specified in API doc
 	seed := 0
-	if len(os.Args) > 3 {
+	if len(os.Args) >= 3 {
 		s := os.Args[2]
 		var err error
 		size, err = strconv.Atoi(s)
